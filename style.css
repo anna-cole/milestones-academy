@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+@keyframes pulse-animation {
+  0% {
+  transform: scale(1);
+  }
+  50% {
+  transform: scale(1.2);
+  }
+  100% {
+  transform: scale(1);
+  }
+}
+
+body {
+  font-family: "Roboto", sans-serf;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+nav .number-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: .5rem;
+  background: #22aee1;
+  color: white;
+  font-size: 1.15rem;
+}
+
+.number {
+  background: rgb(243, 112, 5);
+  text-decoration: none;
+  color: white;
+  border-radius: 2px;
+  padding: .15rem .5rem;
+  margin-left: 1rem;
+  
+}
+
+nav .container { 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1.25rem 0rem;
+  background-color: white;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  color: #22aee1;
+  font-weight: 700;
+}
+
+.logo {
+  width: 200px;
+}
+
+/* Social buttons */
+.socicon {
+  width: 2rem;
+  height: 2rem;
+}
+  
+.socicon:hover {
+  animation: pulse-animation 1s;
+}
+/* Social button ends */
+/* Navbar ends */

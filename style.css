@@ -44,7 +44,6 @@ nav .number-container {
   border-radius: 2px;
   padding: .15rem .5rem;
   margin-left: 1rem;
-  
 }
 
 nav .container { 
@@ -82,10 +81,18 @@ nav .container {
 /* Navbar ends */
 
 /* Banner section */
-.home img {
+.banner img {
   margin: 0 auto;
   width: 100%;
   height: 80%;
   border-bottom: 8px solid #22aee1;
 }
 /* Banner section ends*/
+
+/* Newsletter section */
+@media(min-width: 768px) {
+  .news-input {
+    width: 50%;
+  }
+}
+/* Newsletter section ends*/

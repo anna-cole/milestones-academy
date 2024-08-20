@@ -1,17 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
 
-@keyframes pulse-animation {
-  0% {
-  transform: scale(1);
-  }
-  50% {
-  transform: scale(1.2);
-  }
-  100% {
-  transform: scale(1);
-  }
-}
-
 body {
   font-family: "Roboto", sans-serf;
 }
@@ -26,7 +14,7 @@ nav {
   z-index: 1;
 }
 
-nav .number-container {
+nav .phone-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,7 +25,7 @@ nav .number-container {
   font-size: 1.15rem;
 }
 
-.number {
+.phone {
   background: rgb(243, 191, 5);
   text-decoration: none;
   color: white;
@@ -55,10 +43,6 @@ nav .container {
   background-color: white;
 }
 
-.navbar-brand {
-  font-size: 1.5rem;
-}
-
 .nav-link {
   color: #22aee1;
   font-weight: 700;
@@ -73,9 +57,27 @@ nav .container {
   width: 2rem;
   height: 2rem;
 }
+
+@keyframes bounce-animation {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
   
 .socicon:hover {
-  animation: pulse-animation 1s;
+  animation: bounce-animation 1s;
 }
 /* Social button ends */
 /* Navbar ends */

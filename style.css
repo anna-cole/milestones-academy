@@ -4,14 +4,16 @@ body {
   font-family: "Roboto", sans-serf;
 }
 
+body::before {
+  display: block;
+  content: '';
+  height: 135px;
+}
+
 /* Navbar */
 .navbar {
   display: flex;
   flex-direction: column;
-  position: sticky;
-  top: 0;
-  left: 0;
-  z-index: 1;
 }
 
 .phone-container {

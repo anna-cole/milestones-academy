@@ -5,7 +5,7 @@ body {
 }
 
 /* Navbar */
-nav {
+.navbar {
   display: flex;
   flex-direction: column;
   position: sticky;
@@ -14,7 +14,7 @@ nav {
   z-index: 1;
 }
 
-nav .phone-container {
+.phone-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,7 +40,7 @@ nav .container {
   justify-content: space-between;
   gap: 1.5rem;
   padding: .5rem 0rem;
-  background-color: white;
+  width: 100%;
 }
 
 .nav-link {

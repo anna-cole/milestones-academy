@@ -28,7 +28,7 @@ body::before {
 }
 
 .phone {
-  background: rgb(243, 191, 5);
+  background: rgb(243, 164, 5, 0.875);
   text-decoration: none;
   color: white;
   border-radius: 2px;
@@ -54,7 +54,6 @@ nav .container {
   width: 200px;
 }
 
-/* Social buttons */
 .socicon {
   width: 2rem;
   height: 2rem;
@@ -81,7 +80,6 @@ nav .container {
 .socicon:hover {
   animation: bounce-animation 1s;
 }
-/* Social button ends */
 /* Navbar ends */
 
 /* Banner section */
@@ -107,5 +105,4 @@ nav .container {
   height: 100%;
   border-radius: 10px;
 }
-
 /* Map section ends*/

@@ -19,39 +19,41 @@
         <div class="phone">832-960-8615</div>
       </div>
       <div class="container">
-        <!-- <a href="#" class="navbar-logo">
-          <img
-            src="img/logo-crop.jpg"
-            alt="Logo"
-            loading="lazy"
-            class="logo"
-          />
-        </a> -->
-        <a href="https://facebook.com/profile.php?id=61551534043862" target="_blank">
-          <img
-            src="icons/icons8-facebook.gif"
-            alt="Facebook"
-            loading="lazy"
-            class="socicon"
-          />
-        </a>
-        <a href="https://instagram.com/milestonesacademykaty" target="_blank">
-          <img 
-            src="icons/icons8-instagram.gif" 
-            alt="Instagram" 
-            loading="lazy"
-            class="socicon"
-          />
-        </a>
-        <a href="" target="" data-bs-toggle="modal" 
-        data-bs-target="#enroll">
-          <img 
-            src="icons/icons8-email.gif" 
-            alt="Email" 
-            loading="lazy"
-            class="socicon"
-          />
-        </a>
+        <div class="d-flex align-items-center justify-content-between gap-2">
+          <!-- <a href="#" class="navbar-logo">
+            <img
+              src="img/logo-crop.jpg"
+              alt="Logo"
+              loading="lazy"
+              class="logo"
+            />
+          </a> -->
+          <a href="https://facebook.com/profile.php?id=61551534043862" target="_blank">
+            <img
+              src="icons/icons8-facebook.gif"
+              alt="Facebook"
+              loading="lazy"
+              class="socicon"
+            />
+          </a>
+          <a href="https://instagram.com/milestonesacademykaty" target="_blank">
+            <img 
+              src="icons/icons8-instagram.gif" 
+              alt="Instagram" 
+              loading="lazy"
+              class="socicon"
+            />
+          </a>
+          <a href="" target="" data-bs-toggle="modal" 
+          data-bs-target="#enroll">
+            <img 
+              src="icons/icons8-email.gif" 
+              alt="Email" 
+              loading="lazy"
+              class="socicon"
+            />
+          </a>
+        </div>
         <button 
           class="navbar-toggler" 
           type="button" 
@@ -94,19 +96,24 @@
     <section id="about" class="bg-dark text-light p-5 text-center text-sm-start"> 
       <!-- text-sm-start - It will align text on the start for small screens and up -->
       <div class="container">
-        <div class="d-sm-flex align-items-center justify-content-between">
-          <div>
+        <div class="row align-items-center">
+          <div class="col-md mb-4 mb-lg-0">
+            <!-- col-md-12 This means that for devices with a screen width of 768px or greater (medium devices), the column will take up the full width of the row (12 columns, which is 100% width in Bootstrap’s grid system). On smaller devices (below 768px), the columns will stack, each taking up the full width, with 1.5rem bottom margins. col-lg-6 For devices with a screen width of 992px or greater (large devices), the column will take up 6 out of 12 columns (50% width). This effectively makes the column half-width on large devices.On larger devices (992px and up), the two columns will sit side by side, each taking up 50% width, and the bottom margin will be removed. -->
             <h1>Take the first step towards laying down a <span class="text-warning">foundation for learning.</span></h1> 
             <p class="lead my-4">At Milestones Academy, we are passionate about giving children the best possible start in life. We believe that children learn best in a quality environment that is happy, nurturing, engaging, and safe. This is why we provide an environment that is responsive to our children’s capabilities in order for every child to experience feelings of success and accomplishment.</p>
-            <button 
-              class="btn btn-primary btn-lg" 
-              data-bs-toggle="modal" 
-              data-bs-target="#enroll">
-              Start The Enrollment
-            </button> 
+            <div class="col-md-12 col-lg-6 text-center">
+              <button 
+                class="btn btn-primary btn-lg" 
+                data-bs-toggle="modal" 
+                data-bs-target="#enroll">
+                Start The Enrollment
+              </button> 
+            </div>
           </div>
-          <img class="img-fluid w-50 d-none d-sm-block" src="img/daycare.jpg" alt="">
-          <!-- d-none d-sm-block - Img display none but for sm & up will display block. img-fluid will contain the img inside its container -->
+          <div class="col-md-12 col-lg-6 text-center">
+            <!-- img-fluid Ensures the image scales properly with the parent container, it'll contain the img inside its container. mx-auto Centers the image horizontally.The class mx-auto stands for "horizontal margin: auto" and works to center block elements (or images in this case) within a container when they have a defined width (like w-75). d-none d-sm-block - Img display none but for sm & up will display block -->
+            <img class="img-fluid w-75 mx-auto" src="img/daycare.jpg" alt="Daycare">
+          </div>
         </div>
       </div>
     </section>
@@ -129,13 +136,13 @@
       <div class="container">
         <div class="row text-center g-4">
           <div class="col-md">
-            <div class="card text-light" style="background: #22aee1; height: 350px;">
+            <div class="card text-light" style="background: #22aee1; min-height: 350px;">
               <div class="card-body text-center">
                 <div class="h1 mb-3">
                   <!-- <i class="bi bi-laptop"></i> -->
                   <img
                     src="icons/icons8-pacifier-50.png"
-                    alt="Pacifier"
+                    alt="Infant"
                     loading="lazy"
                   />
                 </div>
@@ -148,13 +155,13 @@
             </div>
           </div>
           <div class="col-md">
-            <div class="card bg-danger text-light" style="height: 350px;">
+            <div class="card bg-danger text-light" style="min-height: 350px;">
               <div class="card-body text-center">
                 <div class="h1 mb-3">
                   <!-- <i class="bi bi-person-square"></i> -->
                   <img
                     src="icons/icons8-child-50.png"
-                    alt="Pacifier"
+                    alt="Toddler"
                     loading="lazy"
                   />
                 </div>
@@ -167,19 +174,19 @@
             </div>
           </div>
           <div class="col-md">
-            <div class="card text-light" style="background: rgba(243, 164, 5, 0.875); height: 350px;">
+            <div class="card text-light" style="background: rgba(243, 164, 5, 0.875); min-height: 350px;">
               <div class="card-body text-center">
                 <div class="h1 mb-3">
                   <!-- <i class="bi bi-people"></i> -->
                   <img
                     src="icons/icons8-backpack-50.png"
-                    alt="Pacifier"
+                    alt="Preschool"
                     loading="lazy"
                   />
                 </div>
                 <h3 class="card-title mb-3">Preschool</h3>
                 <p class="card-text">
-                  From 3 years old and up. At this age, we focus on preparing children for their elementary school years by building foundational skills in literacy, math, and problem-solving through activities that promote curiosity and critical thinking. 
+                  From 3 years old and up, we focus on preparing children for their elementary school years by building foundational skills in literacy, math, and problem-solving through activities that promote curiosity, critical thinking and a love of learning. 
                 </p>
                 <!-- <a href="#" class="btn btn-primary">Learn More</a> -->
               </div>
@@ -203,7 +210,7 @@
           </a> -->
         </div>
         <div class="col-md d-flex align-items-center justify-content-center">
-          <img src="img/curriculum.JPG" class="img-fluid" alt="" style="width: 70%">
+          <img src="img/curriculum.JPG" class="img-fluid w-75 mx-auto" alt="Curriculum">
         </div>
       </div>
     </div>
@@ -214,7 +221,7 @@
       <div class="container">
         <div class="row align-item-center justify-content-between">
           <div class="col-md d-flex align-items-center justify-content-center">
-            <img src="img/collage.png" class="img-fluid" alt="" width="90%">
+            <img src="img/collage.png" class="img-fluid" alt="Facilities" width="90%">
           </div>
           <div class="col-md p-5">
             <h2>Our facilities</h2>
@@ -371,7 +378,7 @@
     <footer class="p-5 bg-dark text-white text-center position-relative">
       <div class="container">
         <!-- <p class="lead">Copyright &copy; 2024</p> -->
-        <p class="lead">Developed by <a href="https://anna-cole.com/" target="_blank">Anna Cole</a></p>
+        <p class="lead">Developed with &#x2661; and ☕️ by <a href="https://anna-cole.com/" target="_blank">Anna Cole</a></p>
         <a href="#" class="position-absolute bottom-0 end-0 p-5">
           <i class="bi bi-arrow-up-circle h1"></i>
         </a>

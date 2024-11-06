@@ -4,6 +4,7 @@ body {
   font-family: "Roboto", sans-serf;
 }
 
+/* When you have a fixed header or navbar that covers the top part of the page, you might use this technique to create space so that content doesn’t hide behind the header. This ensures that the content of the page doesn't start at the very top, where the fixed header would cover it.*/
 body::before {
   display: block;
   content: '';
@@ -37,10 +38,6 @@ body::before {
 }
 
 nav .container { 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1.5rem;
   padding: .5rem 0rem;
   width: 100%;
 }
@@ -80,9 +77,19 @@ nav .container {
 .socicon:hover {
   animation: bounce-animation 1s;
 }
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    display: flex;
+    justify-content: flex-end; /* Aligns the items to the right */
+    padding-right: 15px; /* Adds a small padding on the right side */
+  }
+}
+
 /* Navbar ends */
 
 /* Banner section */
+/* margin: 0 auto -> centers the image horizontally within its container. 0 sets the top and bottom margins to zero, while auto sets the left and right margins, centering the image if the parent container allows. */
 .banner img {
   margin: 0 auto;
   width: 100%;

@@ -8,7 +8,7 @@ body {
 body::before {
   display: block;
   content: '';
-  height: 135px;
+  height: 100px;
 }
 
 /* Navbar */

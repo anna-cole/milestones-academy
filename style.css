@@ -4,7 +4,7 @@ body {
   font-family: "Roboto", sans-serf;
 }
 
-/* When you have a fixed header or navbar that covers the top part of the page, you might use this technique to create space so that content doesn’t hide behind the header. This ensures that the content of the page doesn't start at the very top, where the fixed header would cover it.*/
+/* When you have a fixed header or navbar that covers the top part of the page, you might use this technique to create space so that content doesn’t hide behind the header. This ensures that the content of the page doesn't start at the very top, where the fixed header would cover it. */
 body::before {
   display: block;
   content: '';
@@ -85,7 +85,6 @@ nav .container {
     padding-right: 15px; /* Adds a small padding on the right side */
   }
 }
-
 /* Navbar ends */
 
 /* Banner section */
@@ -96,7 +95,36 @@ nav .container {
   height: 80%;
   border-bottom: 8px solid #22aee1;
 }
-/* Banner section ends*/
+/* Banner section ends */
+
+/* About section */
+.carousel-inner {
+  position: relative; 
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 5%; 
+  left: 20%;
+  transform: translateX(-50%);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5%; 
+}
+
+.carousel-control-prev {
+  left: 5%; 
+}
+
+.carousel-control-next {
+  right: 30%; 
+}
+/* About section ends *?
 
 /* Newsletter section */
 @media(min-width: 768px) {
@@ -104,7 +132,7 @@ nav .container {
     width: 50%;
   }
 }
-/* Newsletter section ends*/
+/* Newsletter section ends */
 
 /* Map section */
 #map {
@@ -112,4 +140,4 @@ nav .container {
   height: 100%;
   border-radius: 10px;
 }
-/* Map section ends*/
+/* Map section ends */

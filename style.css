@@ -105,7 +105,7 @@ nav .container {
 .carousel-indicators {
   position: absolute;
   bottom: 5%; 
-  left: 20%;
+  left: 35%;
   transform: translateX(-50%);
 }
 
@@ -118,12 +118,17 @@ nav .container {
 }
 
 .carousel-control-prev {
-  left: 5%; 
+  left: 20%; 
 }
 
 .carousel-control-next {
-  right: 30%; 
+  right: 20%; 
 }
+
+.carousel-indicators .button {
+  min-width: 10px;
+}
+
 /* About section ends *?
 
 /* Newsletter section */

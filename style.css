@@ -29,7 +29,7 @@ body::before {
 }
 
 .phone {
-  background: rgb(243, 164, 5, 0.875);
+  background: rgba(243, 53, 5, 0.875);
   text-decoration: none;
   color: white;
   border-radius: 2px;

@@ -39,10 +39,7 @@ body::before {
 
 nav .container { 
   padding: .5rem 0rem;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;    
+  width: 100%; 
 }
 
 .nav-link {

@@ -51,8 +51,7 @@ nav .container {
   display: flex;
   flex-direction: column;
   align-items: center;     /* horizontal centering */
-  text-align: center;      /* text centering */
-  line-height: 1.2;       /* Adjust line height for better spacing */
+  text-align: center;      /* text centering */  
 }
 
 .nav-link.stacked {

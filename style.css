@@ -64,8 +64,13 @@ nav .container {
   display: block;
 }
 
-.logo {
+.logo-text {
   height: 50px;
+  width: auto;
+}
+
+.logo {
+  height: 60px;
   width: auto;
 }
 

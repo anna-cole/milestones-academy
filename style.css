@@ -40,7 +40,6 @@ body::before {
 nav .container { 
   padding: .5rem 0rem;
   width: 100%;
-  background-color: brown; 
 }
 
 .nav-link {

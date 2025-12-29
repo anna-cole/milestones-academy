@@ -72,6 +72,14 @@ nav .container {
   display: block;
 }
 
+#navmenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;     /* horizontal centering */
+  text-align: center;      /* text centering */
+  line-height: 1.2;
+}
+
 @media (max-width: 991.98px) {
   .navbar-collapse {
     display: flex;

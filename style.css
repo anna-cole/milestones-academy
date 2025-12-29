@@ -23,8 +23,7 @@ body::before {
   justify-content: center;
   width: 100%;
   padding: .5rem;
-  background: #22aee1;
-  color: white;
+  color: #22aee1;
   font-size: 1.15rem;
 }
 
@@ -43,7 +42,8 @@ nav .container {
 }
 
 .nav-link {
-  color: #22aee1;
+  background: #22aee1;
+  color: white;
   font-weight: 700;
 }
 

@@ -32,7 +32,7 @@ body::before {
   background: rgba(243, 53, 5, 0.875);
   text-decoration: none;
   color: white;
-  border-radius: 2px;
+  border-radius: 5px;
   padding: .15rem .5rem;
   margin-left: 1rem;
 }
@@ -49,8 +49,7 @@ nav .container {
 
 .nav-item {
   display: flex;
-  align-items: center;     /* horizontal centering */
- 
+  align-items: center;   
 }
 
 .nav-link.stacked {

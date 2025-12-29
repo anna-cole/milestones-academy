@@ -39,10 +39,10 @@ body::before {
 nav .container { 
   padding: .5rem 0rem;
   width: 100%;
+  background: #22aee1;
 }
 
 .nav-link {
-  background: #22aee1;
   color: white;
   font-weight: 700;
 }

@@ -65,19 +65,11 @@ nav .container {
   flex-direction: column;
   align-items: center;     /* horizontal centering */
   text-align: center;      /* text centering */
-  line-height: 1.2;
+  
 }
 
 .nav-link.stacked span {
   display: block;
-}
-
-#navmenu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;     /* horizontal centering */
-  text-align: center;      /* text centering */
- 
 }
 
 @media (max-width: 991.98px) {

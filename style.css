@@ -40,11 +40,26 @@ body::before {
 nav .container { 
   padding: .5rem 0rem;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;    
 }
 
 .nav-link {
   color: #22aee1;
   font-weight: 700;
+}
+
+.nav-link.stacked {
+  display: flex;
+  flex-direction: column;
+  align-items: center;     /* horizontal centering */
+  text-align: center;      /* text centering */
+  line-height: 1.2;       /* Adjust line height for better spacing */
+}
+
+.nav-link.stacked span {
+  display: block;
 }
 
 .logo {
@@ -58,18 +73,6 @@ nav .container {
   
 .socicon:hover {
   animation: bounce-animation 1s;
-}
-
-.nav-link.stacked {
-  display: flex;
-  flex-direction: column;
-  align-items: center;     /* horizontal centering */
-  text-align: center;      /* text centering */
-  
-}
-
-.nav-link.stacked span {
-  display: block;
 }
 
 @media (max-width: 991.98px) {

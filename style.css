@@ -68,6 +68,11 @@ nav .container {
   width: 200px;
 }
 
+.icons-container {
+  display: flex;
+  gap: 1rem;
+}
+
 .socicon {
   width: 2rem;
   height: 2rem;

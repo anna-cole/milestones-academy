@@ -55,6 +55,30 @@ nav .container {
   width: 2rem;
   height: 2rem;
 }
+  
+.socicon:hover {
+  animation: bounce-animation 1s;
+}
+
+.nav-link.stacked {
+  display: flex;
+  flex-direction: column;
+  align-items: center;     /* horizontal centering */
+  text-align: center;      /* text centering */
+  line-height: 1.2;
+}
+
+.nav-link.stacked span {
+  display: block;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    display: flex;
+    justify-content: flex-end; /* Aligns the items to the right */
+    padding-right: 15px; /* Adds a small padding on the right side */
+  }
+}
 
 @keyframes bounce-animation {
   0% {
@@ -71,18 +95,6 @@ nav .container {
   }
   100% {
     transform: translateY(0);
-  }
-}
-  
-.socicon:hover {
-  animation: bounce-animation 1s;
-}
-
-@media (max-width: 991.98px) {
-  .navbar-collapse {
-    display: flex;
-    justify-content: flex-end; /* Aligns the items to the right */
-    padding-right: 15px; /* Adds a small padding on the right side */
   }
 }
 /* Navbar ends */

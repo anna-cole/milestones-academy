@@ -28,9 +28,12 @@ body::before {
   font-size: 1.15rem;
 }
 
+.call-text {
+  margin-right: 1rem;
+}
+
 .phone-number {
   background: rgba(243, 53, 5, 0.875);
-  color: white;
   border-radius: 5px;
   padding: .15rem .5rem;
   margin-left: auto;

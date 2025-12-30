@@ -20,7 +20,7 @@ body::before {
 .phone-container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   width: 100%;
   padding: .5rem;
   background: #22aee1;
@@ -33,7 +33,8 @@ body::before {
   color: white;
   border-radius: 5px;
   padding: .15rem .5rem;
-  margin-left: 1rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .icons-container {
@@ -74,9 +75,9 @@ nav .container {
   line-height: 1.2;       /* Adjust line height for better spacing */
 }
 
-.nav-link.stacked span {
+/* .nav-link.stacked span {
   display: block;
-}
+} */
 
 .logo-text {
   height: 50px;
@@ -87,8 +88,6 @@ nav .container {
   height: 80px;
   width: auto;
 }
-
-
 
 @media (max-width: 991.98px) {
   .navbar-collapse {

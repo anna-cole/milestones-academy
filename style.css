@@ -40,6 +40,8 @@ body::before {
 nav .container { 
   padding: .5rem 0rem;
   width: 100%;
+  display: flex;
+  flex-direction: center;
 }
 
 .nav-link {
@@ -47,10 +49,10 @@ nav .container {
   font-weight: 700;
 }
 
-.nav-item {
+/* .nav-item {
   display: flex;
   align-items: center;   
-}
+} */
 
 .nav-link.stacked {
   display: flex;
@@ -65,12 +67,12 @@ nav .container {
 }
 
 .logo-text {
-  height: 60px;
+  height: 50px;
   width: auto;
 }
 
 .logo {
-  height: 60px;
+  height: 70px;
   width: auto;
 }
 

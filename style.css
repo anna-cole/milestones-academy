@@ -40,8 +40,6 @@ body::before {
 nav .container { 
   padding: .5rem 0rem;
   width: 100%;
-  display: flex;
-  flex-direction: center;
 }
 
 .nav-link {
@@ -49,14 +47,13 @@ nav .container {
   font-weight: 700;
 }
 
-/* .nav-item {
+.nav-item {
   display: flex;
   align-items: center;   
-} */
+}
 
 .nav-link.stacked {
-  display: flex;
-  flex-direction: column;
+ 
   align-items: center;     /* horizontal centering */
   text-align: center;      /* text centering */
   line-height: 1.2;       /* Adjust line height for better spacing */

@@ -18,7 +18,7 @@ body::before {
 }
 
 .phone-container {
- 
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -28,13 +28,27 @@ body::before {
   font-size: 1.15rem;
 }
 
-.phone {
+.phone-number {
   background: rgba(243, 53, 5, 0.875);
-  text-decoration: none;
   color: white;
   border-radius: 5px;
   padding: .15rem .5rem;
   margin-left: 1rem;
+}
+
+.icons-container {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.socicon {
+  width: 2rem;
+  height: 2rem;
+}
+  
+.socicon:hover {
+  animation: bounce-animation 1s;
 }
 
 nav .container { 
@@ -48,11 +62,13 @@ nav .container {
 }
 
 .nav-item {
- 
+  display: flex;
   align-items: center;   
 }
 
 .nav-link.stacked {
+  display: flex;
+  
   align-items: center;     /* horizontal centering */
   text-align: center;      /* text centering */
   line-height: 1.2;       /* Adjust line height for better spacing */
@@ -68,24 +84,11 @@ nav .container {
 }
 
 .logo {
-  height: 70px;
+  height: 80px;
   width: auto;
 }
 
-.icons-container {
 
-  align-items: center;
-  justify-content: left;
-}
-
-.socicon {
-  width: 2rem;
-  height: 2rem;
-}
-  
-.socicon:hover {
-  animation: bounce-animation 1s;
-}
 
 @media (max-width: 991.98px) {
   .navbar-collapse {

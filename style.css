@@ -34,6 +34,7 @@ body::before {
 
 .phone-number {
   background: rgba(243, 53, 5, 0.875);
+  color: white;
   border-radius: 5px;
   padding: .15rem .5rem;
   text-decoration: none;
@@ -44,7 +45,8 @@ body::before {
 .icons-container {
   display: flex;
   align-items: center;
-  justify-content: left;
+  /* justify-content: left; */
+  gap: 0.5rem;
 }
 
 .socicon {

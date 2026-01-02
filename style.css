@@ -20,7 +20,7 @@ body::before {
 .phone-container {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   width: 100%;
   padding: .5rem;
   background: #22aee1;
@@ -38,8 +38,6 @@ body::before {
   border-radius: 5px;
   padding: .15rem .5rem;
   text-decoration: none;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .icons-container {

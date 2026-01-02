@@ -18,6 +18,7 @@ body::before {
 }
 
 .phone-container {
+  position: relative; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,9 +42,10 @@ body::before {
 }
 
 .icons-container {
+  position: absolute;
+  left: 0.75rem; 
   display: flex;
   align-items: center;
-  /* justify-content: left; */
   gap: 0.5rem;
 }
 

@@ -80,13 +80,15 @@ nav .container {
   line-height: 1.2;       /* Adjust line height for better spacing */
 }
 
-.logo-container {
+.navbar-logo {
   display: flex;
   align-items: center;
-  margin-left: -20px; /* adjust value as needed */
+  gap: 10px;
+  height: 50px;
+  width: auto;
 }
 
-.logo-text {
+/* .logo-text {
   height: 50px;
   width: auto;
 }
@@ -94,7 +96,7 @@ nav .container {
 .logo {
   height: 80px;
   width: auto;
-}
+} */
 
 @media (max-width: 991.98px) {
   .navbar-collapse {

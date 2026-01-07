@@ -80,12 +80,6 @@ nav .container {
   line-height: 1.2;       /* Adjust line height for better spacing */
 }
 
-.navbar-logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
 .logo-text {
   height: 50px;
   width: auto;

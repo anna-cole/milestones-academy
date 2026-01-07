@@ -43,10 +43,9 @@ body::before {
 
 .icons-container {
   position: absolute;
-  left: 0.75rem; 
+  left: 1rem; 
   display: flex;
   align-items: center;
-  gap: 0.5rem;
 }
 
 .socicon {
@@ -89,7 +88,7 @@ nav .container {
 .logo {
   height: 80px;
   width: auto;
-  gap: 0.5rem;
+  margin-right: 1rem;
 }
 
 @media (max-width: 991.98px) {

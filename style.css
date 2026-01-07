@@ -67,10 +67,10 @@ nav .container {
   font-weight: 700;
 }
 
-.nav-item {
+/* .nav-item {
   display: flex;
   align-items: center;   
-}
+} */
 
 .nav-link.stacked {
   display: flex;

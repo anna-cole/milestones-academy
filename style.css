@@ -86,6 +86,8 @@ nav .container {
 }
 
 .logo {
+  position: absolute;
+  left: 1rem; 
   height: 80px;
   width: auto;
   margin-right: 1rem;

@@ -12,10 +12,10 @@ body::before {
 }
 
 /* Navbar */
-.navbar {
+/* .navbar {
   display: flex;
   flex-direction: column;
-}
+} */
 
 .phone-container {
   position: relative; 

@@ -42,8 +42,8 @@ body::before {
 }
 
 .icons-container {
-  position: absolute;
-  left: .75rem; 
+  /* position: absolute;
+  left: .75rem;  */
   display: flex;
   align-items: center;
 }

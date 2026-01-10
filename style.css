@@ -88,10 +88,6 @@ nav .container {
 .logo {
   height: 80px;
   width: auto;
-  position: absolute;
-  left: .75rem; 
-  display: flex;
-  align-items: center;
 }
 
 @media (max-width: 991.98px) {

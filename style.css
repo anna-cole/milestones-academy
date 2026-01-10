@@ -57,7 +57,7 @@ body::before {
   animation: bounce-animation 1s;
 }
 
-nav .container { 
+nav .links-container { 
   padding: .5rem 0rem;
   width: 100%;
 }

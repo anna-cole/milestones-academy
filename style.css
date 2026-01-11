@@ -17,7 +17,7 @@ body::before {
   flex-direction: column;
 }
 
-.navber .container {
+.navbar .container {
   position: relative; 
   display: flex;
   align-items: center;

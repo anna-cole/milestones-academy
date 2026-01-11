@@ -17,13 +17,13 @@ body::before {
   flex-direction: column;
 }
 
-.navbar .container {
-  position: relative; 
+.phone-container {
+  /* position: relative;  */
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 100%;
-  padding: .5rem;
+  /* justify-content: center; */
+  /* width: 100%; */
+  /* padding: .5rem; */
   background: #22aee1;
   color: white;
   font-size: 1.15rem;

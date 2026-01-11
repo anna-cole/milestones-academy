@@ -17,7 +17,7 @@ body::before {
   flex-direction: column;
 }
 
-.phone-container {
+.navber .container {
   position: relative; 
   display: flex;
   align-items: center;

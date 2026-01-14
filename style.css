@@ -21,7 +21,7 @@ body::before {
   position: relative; 
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   padding: .5rem;
   background: #22aee1;

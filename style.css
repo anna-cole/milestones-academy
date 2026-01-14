@@ -22,7 +22,6 @@ body::before {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 2rem;
   width: 100%;
   padding: .5rem;
   background: #22aee1;

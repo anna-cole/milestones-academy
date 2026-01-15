@@ -34,6 +34,10 @@ body::before {
   align-items: center;
 }
 
+.right-spacer {
+  width: calc(3 * 2rem); /* roughly match 3 icons width */
+}
+
 .phone-number {
   background: rgba(243, 53, 5, 0.875);
   color: white;

@@ -91,6 +91,10 @@ nav .container {
   text-decoration: none;
 }
 
+.logo-container {
+  margin-left: clamp(0.5rem, 3vw, 2rem);
+}
+
 .logo-text {
   height: 50px;
   width: auto;

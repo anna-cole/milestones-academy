@@ -18,10 +18,8 @@ body::before {
 }
 
 .phone-container {
-  position: relative; 
   display: flex;
   align-items: center;
-  justify-content: center;
   width: 100%;
   padding: .5rem;
   background: #22aee1;
@@ -29,8 +27,9 @@ body::before {
   font-size: 1.15rem;
 }
 
-.call-text {
-  margin-right: 1rem;
+.call-text,
+.phone-number {
+  margin-left: .5rem;
 }
 
 .phone-number {
@@ -44,6 +43,7 @@ body::before {
 .icons-container {
   display: flex;
   align-items: center;
+  margin-right: auto;   /* forces icons to the left */
 }
 
 .socicon {

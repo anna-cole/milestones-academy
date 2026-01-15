@@ -32,6 +32,7 @@ body::before {
   margin-right: auto;   /* centers between left and right edges */
   display: flex;
   align-items: center;
+  gap: 0.5rem;   /* controls space between text and number */
 }
 
 .right-spacer {
@@ -49,7 +50,7 @@ body::before {
 .icons-container {
   display: flex;
   align-items: center;
-  margin-left: clamp(0.5rem, 3vw, 3rem);
+  margin-left: clamp(0.5rem, 3vw, 2rem);
 }
 
 .socicon {

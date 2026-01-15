@@ -27,9 +27,10 @@ body::before {
   font-size: 1.15rem;
 }
 
-.call-text,
-.phone-number {
-  margin-left: .5rem;
+.phone-center {
+  margin: 0 auto;   /* centers this block */
+  display: flex;
+  align-items: center;
 }
 
 .phone-number {

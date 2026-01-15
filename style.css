@@ -28,7 +28,8 @@ body::before {
 }
 
 .phone-center {
-  margin: 0 auto;   /* centers this block */
+  margin-left: auto;
+  margin-right: auto;   /* centers between left and right edges */
   display: flex;
   align-items: center;
 }
@@ -44,7 +45,6 @@ body::before {
 .icons-container {
   display: flex;
   align-items: center;
-  margin-right: auto;   /* forces icons to the left */
 }
 
 .socicon {

@@ -93,7 +93,7 @@ nav .container {
 
 .logo-container {
   /* margin-left: calc(clamp(0.5rem, 3vw, 2rem) * -1); */
-  margin-left: calc(clamp(0.5rem, 3vw, 2rem) + 0.25rem);
+  margin-left: calc(clamp(0.5rem, 3vw, 2rem));
 }
 
 .logo-text {

@@ -50,8 +50,7 @@ body::before {
 .icons-container {
   display: flex;
   align-items: center;
-  /* margin-left: clamp(1rem, 4vw, 2.5rem); */
-  margin-left: clamp(0.5rem, 3vw, 2rem)
+  margin-left: clamp(0.5rem, 3vw, 2rem);
 }
 
 .socicon {
@@ -93,12 +92,6 @@ nav .container {
 }
 
 .logo-container {
-  /* margin-left: calc(clamp(0.5rem, 3vw, 2rem) * -1); */
-  /* margin-left: calc(clamp(0.5rem, 3vw, 2rem)); */
-  /* margin-left: clamp(1rem, 4vw, 2.5rem); */
-  /* margin-left: clamp(0.5rem, 3vw, 2rem); */
-  /* margin-left: calc(clamp(0.5rem, 3vw, 2rem) + 0.5rem); */
-  /* margin-left: calc(clamp(0.5rem, 3vw, 2rem) * -1); */
   margin-left: -1rem;
 }
 

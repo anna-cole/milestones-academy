@@ -94,7 +94,8 @@ nav .container {
 .logo-container {
   /* margin-left: calc(clamp(0.5rem, 3vw, 2rem) * -1); */
   /* margin-left: calc(clamp(0.5rem, 3vw, 2rem)); */
-  margin-left: clamp(1rem, 4vw, 2.5rem);
+  /* margin-left: clamp(1rem, 4vw, 2.5rem); */
+  margin-left: clamp(0.5rem, 3vw, 2rem);
 }
 
 .logo-text {

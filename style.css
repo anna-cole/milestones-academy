@@ -149,21 +149,27 @@ nav .container {
 }
 
 /* FORCE bottom-left even if Bootstrap classes exist */
-#banner > .banner-text{
-  position: absolute;
-  left: 1.5rem;
-  bottom: 3rem;              /* higher = more up (try 2.5rem–5rem) */
+.banner-inner .banner-text{
+  position: absolute !important;
+  left: 1.5rem !important;
+  bottom: 3rem !important;
 
   max-width: 320px;          /* forces it to wrap into 2 lines */
   white-space: normal;       /* allow wrapping */
-  
-  margin: 0;
-  text-align: left;
+
+  /* top: auto !important;
+  right: auto !important;
+  transform: none !important; */
+
+  margin: 0 !important;
+  text-align: left !important;
+
   color: #fff;
-  font-weight: 800;
+  font-weight: 600;
   font-size: clamp(1.4rem, 3.5vw, 3rem);
   line-height: 1.1;
   text-shadow: 0 4px 14px rgba(0,0,0,0.55);
+  padding: 0.4rem 0.6rem;
   z-index: 10;
 }
 /* Banner section ends */

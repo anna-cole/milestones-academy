@@ -132,6 +132,45 @@ nav .container {
 }
 /* Navbar ends */
 
+/* Banner section */
+/* margin: 0 auto -> centers the image horizontally within its container. 0 sets the top and bottom margins to zero, while auto sets the left and right margins, centering the image if the parent container allows. */
+
+.banner-inner{
+  position: relative;
+  width: 100%;
+}
+
+.banner-inner img{
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-bottom: 8px solid #22aee1;
+}
+
+/* FORCE bottom-left even if Bootstrap classes exist */
+.banner-inner .banner-text{
+  position: absolute !important;
+  left: 1.5rem !important;
+  bottom: 1.5rem !important;
+
+  top: auto !important;
+  right: auto !important;
+  transform: none !important;
+
+  margin: 0 !important;
+  text-align: left !important;
+
+  color: #fff;
+  font-weight: 800;
+  font-size: clamp(1.4rem, 3.5vw, 3rem);
+  line-height: 1.1;
+  text-shadow: 0 4px 14px rgba(0,0,0,0.55);
+  padding: 0.4rem 0.6rem;
+  z-index: 10;
+}
+/* Banner section ends */
+
 /* About section */
 .carousel-inner {
   position: relative; 
@@ -194,34 +233,3 @@ nav .container {
 }
 /* Map section ends */
 
-/* Banner section */
-/* margin: 0 auto -> centers the image horizontally within its container. 0 sets the top and bottom margins to zero, while auto sets the left and right margins, centering the image if the parent container allows. */
-
-/* FORCE banner text to bottom-left */
-#banner {
-  position: relative;
-}
-
-#banner > img {
-  display: block;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-#banner > .banner-text {
-  position: absolute !important;
-  left: 1.5rem !important;
-  bottom: 1.5rem !important;
-
-  top: auto !important;
-  right: auto !important;
-  transform: none !important;
-
-  margin: 0 !important;
-  text-align: left !important;
-
-  z-index: 9999 !important;
-}
-
-/* Banner section ends */

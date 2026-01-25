@@ -148,7 +148,7 @@ nav .container {
 }
 
 .banner img {
-  display: block;          /* removes extra gap under image */
+  margin: 0 auto;
   width: 100%;
   height: 80%;
   border-bottom: 8px solid #22aee1;

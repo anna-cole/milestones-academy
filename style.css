@@ -154,7 +154,7 @@ nav .container {
   left: 2rem !important;
   bottom: 3rem !important;
 
-  max-width: 320px;          /* forces it to wrap into 2 lines */
+  /* max-width: 320px;          forces it to wrap into 2 lines */
   white-space: normal;       /* allow wrapping */
 
   /* top: auto !important;

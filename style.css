@@ -151,7 +151,7 @@ nav .container {
 /* FORCE bottom-left even if Bootstrap classes exist */
 .banner-inner .banner-text{
   position: absolute !important;
-  left: 1.5rem !important;
+  left: 2rem !important;
   bottom: 3rem !important;
 
   max-width: 320px;          /* forces it to wrap into 2 lines */

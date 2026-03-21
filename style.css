@@ -1,113 +1,90 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
 
-/* =========================
-   GLOBAL STYLES
-========================= */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
-  font-family: "Roboto", sans-serif;
-  line-height: 1.5;
+  font-family: "Roboto", sans-serf;
 }
 
-/* Prevent content hiding behind fixed navbar */
+/* When you have a fixed header or navbar that covers the top part of the page, you might use this technique to create space so that content doesn’t hide behind the header. This ensures that the content of the page doesn't start at the very top, where the fixed header would cover it. */
 body::before {
   display: block;
   content: '';
-  height: 90px;
+  height: 100px;
 }
 
-/* =========================
-   NAVBAR
-========================= */
+/* Navbar */
 .navbar {
   display: flex;
   flex-direction: column;
-  width: 100%;
 }
 
-/* Top contact bar */
 .phone-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-
   width: 100%;
-  padding: 0.5rem 1rem;
-
+  padding: .5rem;
   background: #22aee1;
   color: white;
-  font-size: clamp(0.9rem, 1vw, 1.1rem);
+  font-size: 1.15rem;
 }
 
-/* Left icons */
-.icons-container {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-/* Center content */
 .phone-center {
+  margin-left: auto;
+  margin-right: auto;   /* centers between left and right edges */
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  margin: 0 auto;
-  text-align: center;
+  gap: 0.5rem;   /* controls space between text and number */
+}
+
+.right-spacer {
+  width: calc(3 * 2rem); /* roughly match 3 icons width */
 }
 
 .phone-number {
-  background: rgba(243, 53, 5, 0.9);
+  background: rgba(243, 53, 5, 0.875);
   color: white;
   border-radius: 5px;
-  padding: 0.2rem 0.6rem;
+  padding: .15rem .5rem;
   text-decoration: none;
-  font-weight: 600;
 }
 
-/* Social icons */
-.socicon {
-  width: clamp(1.6rem, 2vw, 2rem);
-  height: clamp(1.6rem, 2vw, 2rem);
-  transition: transform 0.3s ease;
-}
-
-.socicon:hover {
-  animation: bounce-animation 0.8s;
-}
-
-/* Nav links */
-nav .container {
-  padding: 0.5rem 1rem;
-  width: 100%;
-}
-
-.nav-item {
+.icons-container {
   display: flex;
   align-items: center;
+  margin-left: clamp(0.5rem, 3vw, 2rem);
+}
+
+.socicon {
+  width: 2rem;
+  height: 2rem;
+}
+  
+.socicon:hover {
+  animation: bounce-animation 1s;
+}
+
+nav .container { 
+  padding: .5rem 0rem;
+  width: 100%;
 }
 
 .nav-link {
   color: #22aee1;
   font-weight: 700;
-  font-size: clamp(0.9rem, 1vw, 1.1rem);
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;   
 }
 
 .nav-link.stacked {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  line-height: 1.2;
+  align-items: center;     /* horizontal centering */
+  text-align: center;      /* text centering */
+  line-height: 1.2;       /* Adjust line height for better spacing */
 }
 
-/* Logo */
 .navbar-logo {
   display: flex;
   align-items: center;
@@ -115,96 +92,94 @@ nav .container {
 }
 
 .logo-container {
-  margin-left: -0.5rem;
-}
-
-.logo {
-  height: clamp(60px, 8vw, 80px);
-  width: auto;
+  margin-left: -1rem;
 }
 
 .logo-text {
-  height: clamp(40px, 6vw, 50px);
+  height: 50px;
   width: auto;
 }
 
-/* =========================
-   RESPONSIVE NAVBAR
-========================= */
+.logo {
+  height: 80px;
+  width: auto;
+}
 
-/* Tablets */
-@media (max-width: 992px) {
+@media (max-width: 991.98px) {
   .navbar-collapse {
     display: flex;
-    justify-content: flex-end;
-    padding-right: 15px;
+    justify-content: flex-end; /* Aligns the items to the right */
+    padding-right: 15px; /* Adds a small padding on the right side */
   }
 }
 
-/* Mobile */
-@media (max-width: 576px) {
-  .phone-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+@keyframes bounce-animation {
+  0% {
+    transform: translateY(0);
   }
-
-  .icons-container {
-    justify-content: center;
+  25% {
+    transform: translateY(-20px);
   }
-
-  .phone-center {
-    margin: 0;
+  50% {
+    transform: translateY(0);
   }
-
-  .navbar-collapse {
-    justify-content: center;
+  75% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
+/* Navbar ends */
 
-/* =========================
-   BANNER
-========================= */
-.banner-inner {
+/* Banner section */
+/* margin: 0 auto -> centers the image horizontally within its container. 0 sets the top and bottom margins to zero, while auto sets the left and right margins, centering the image if the parent container allows. */
+
+.banner-inner{
   position: relative;
   width: 100%;
 }
 
-.banner-inner img {
+.banner-inner img{
   display: block;
   width: 100%;
-  height: clamp(250px, 40vw, 600px);
+  height: auto;
   object-fit: cover;
   border-bottom: 8px solid #22aee1;
 }
 
-.banner-inner .banner-text {
-  position: absolute;
-  left: clamp(1rem, 3vw, 3rem);
-  bottom: clamp(1rem, 5vw, 3rem);
+/* FORCE bottom-left even if Bootstrap classes exist */
+.banner-inner .banner-text{
+  position: absolute !important;
+  left: 1.5rem !important;
+  bottom: 1.5rem !important;
 
-  max-width: 90%;
+  top: auto !important;
+  right: auto !important;
+  transform: none !important;
+
+  margin: 0 !important;
+  text-align: left !important;
+
   color: #fff;
-  font-weight: 600;
-
-  font-size: clamp(1.2rem, 3vw, 3rem);
+  font-weight: 800;
+  font-size: clamp(1.4rem, 3.5vw, 3rem);
   line-height: 1.1;
-
   text-shadow: 0 4px 14px rgba(0,0,0,0.55);
+  padding: 0.4rem 0.6rem;
   z-index: 10;
 }
+/* Banner section ends */
 
-/* =========================
-   CAROUSEL / ABOUT
-========================= */
+/* About section */
 .carousel-inner {
-  position: relative;
+  position: relative; 
 }
 
 .carousel-indicators {
   position: absolute;
-  bottom: 5%;
-  left: 50%;
+  bottom: 5%; 
+  left: 35%;
   transform: translateX(-50%);
 }
 
@@ -212,81 +187,48 @@ nav .container {
   min-width: 10px;
 }
 
-/* Controls */
+@media (max-width: 768px) {
+  .carousel-indicators .button {
+    min-width: 5px;
+  }
+}
+
+@media (max-width: 466px) {
+  .carousel-indicators .button {
+    min-width: 2px;
+  }
+}
+
 .carousel-control-prev,
 .carousel-control-next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 8%;
+  width: 5%; 
 }
 
 .carousel-control-prev {
-  left: 5%;
+  left: 20%; 
 }
 
 .carousel-control-next {
-  right: 5%;
+  right: 20%; 
 }
+/* About section ends *?
 
-/* Smaller screens */
-@media (max-width: 768px) {
-  .carousel-indicators .button {
-    min-width: 6px;
-  }
-
-  .carousel-control-prev,
-  .carousel-control-next {
-    width: 12%;
-  }
-}
-
-@media (max-width: 480px) {
-  .carousel-indicators .button {
-    min-width: 4px;
-  }
-
-  .carousel-control-prev,
-  .carousel-control-next {
-    width: 15%;
-  }
-}
-
-/* =========================
-   NEWSLETTER
-========================= */
-.news-input {
-  width: 100%;
-}
-
-@media (min-width: 768px) {
+/* Newsletter section */
+@media(min-width: 768px) {
   .news-input {
     width: 50%;
   }
 }
+/* Newsletter section ends */
 
-@media (min-width: 1200px) {
-  .news-input {
-    width: 40%;
-  }
-}
-
-/* =========================
-   MAP
-========================= */
+/* Map section */
 #map {
   width: 100%;
-  min-height: clamp(300px, 40vw, 500px);
+  height: 100%;
   border-radius: 10px;
+  min-height: 300px;
 }
-
-/* =========================
-   ANIMATIONS
-========================= */
-@keyframes bounce-animation {
-  0% { transform: translateY(0); }
-  25% { transform: translateY(-12px); }
-  50% { transform: translateY(0); }
-  75% { transform: translateY(-6px); }
-  100% { transform: translateY(0); }
-}
+/* Map section ends */

@@ -1,79 +1,102 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
 
-body {
-  font-family: "Roboto", sans-serif;
+/* =========================
+   GLOBAL STYLES
+========================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/* Prevent content from hiding behind fixed navbar */
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+}
+
+/* Prevent content hiding behind fixed navbar */
 body::before {
   display: block;
   content: '';
-  height: 100px;
+  height: 90px;
 }
 
-/* Navbar */
+/* =========================
+   NAVBAR
+========================= */
 .navbar {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
+/* Top contact bar */
 .phone-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap; /* allows wrapping */
+  flex-wrap: wrap;
+  gap: 0.5rem;
+
   width: 100%;
-  padding: .5rem;
+  padding: 0.5rem 1rem;
+
   background: #22aee1;
   color: white;
-  font-size: 1.15rem;
+  font-size: clamp(0.9rem, 1vw, 1.1rem);
 }
 
-/* LEFT SIDE (icons) */
+/* Left icons */
 .icons-container {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
-/* CENTER (contact us) */
+/* Center content */
 .phone-center {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  margin: 0 auto; /* keeps centered */
+  margin: 0 auto;
+  text-align: center;
 }
 
 .phone-number {
-  background: rgba(243, 53, 5, 0.875);
+  background: rgba(243, 53, 5, 0.9);
   color: white;
   border-radius: 5px;
-  padding: .15rem .5rem;
+  padding: 0.2rem 0.6rem;
   text-decoration: none;
+  font-weight: 600;
 }
 
+/* Social icons */
 .socicon {
-  width: 2rem;
-  height: 2rem;
-}
-  
-.socicon:hover {
-  animation: bounce-animation 1s;
+  width: clamp(1.6rem, 2vw, 2rem);
+  height: clamp(1.6rem, 2vw, 2rem);
+  transition: transform 0.3s ease;
 }
 
-nav .container { 
-  padding: .5rem 0rem;
+.socicon:hover {
+  animation: bounce-animation 0.8s;
+}
+
+/* Nav links */
+nav .container {
+  padding: 0.5rem 1rem;
   width: 100%;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
 }
 
 .nav-link {
   color: #22aee1;
   font-weight: 700;
-}
-
-.nav-item {
-  display: flex;
-  align-items: center;   
+  font-size: clamp(0.9rem, 1vw, 1.1rem);
 }
 
 .nav-link.stacked {
@@ -84,6 +107,7 @@ nav .container {
   line-height: 1.2;
 }
 
+/* Logo */
 .navbar-logo {
   display: flex;
   align-items: center;
@@ -91,21 +115,25 @@ nav .container {
 }
 
 .logo-container {
-  margin-left: -1rem;
-}
-
-.logo-text {
-  height: 50px;
-  width: auto;
+  margin-left: -0.5rem;
 }
 
 .logo {
-  height: 80px;
+  height: clamp(60px, 8vw, 80px);
   width: auto;
 }
 
-/* Fix collapse alignment */
-@media (max-width: 991.98px) {
+.logo-text {
+  height: clamp(40px, 6vw, 50px);
+  width: auto;
+}
+
+/* =========================
+   RESPONSIVE NAVBAR
+========================= */
+
+/* Tablets */
+@media (max-width: 992px) {
   .navbar-collapse {
     display: flex;
     justify-content: flex-end;
@@ -113,13 +141,12 @@ nav .container {
   }
 }
 
-/* MOBILE FIX */
+/* Mobile */
 @media (max-width: 576px) {
   .phone-container {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 0.5rem;
   }
 
   .icons-container {
@@ -129,61 +156,55 @@ nav .container {
   .phone-center {
     margin: 0;
   }
+
+  .navbar-collapse {
+    justify-content: center;
+  }
 }
 
-@keyframes bounce-animation {
-  0% { transform: translateY(0); }
-  25% { transform: translateY(-20px); }
-  50% { transform: translateY(0); }
-  75% { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
-}
-/* Navbar ends */
-
-/* Banner section */
-.banner-inner{
+/* =========================
+   BANNER
+========================= */
+.banner-inner {
   position: relative;
   width: 100%;
 }
 
-.banner-inner img{
+.banner-inner img {
   display: block;
   width: 100%;
-  height: auto;
+  height: clamp(250px, 40vw, 600px);
   object-fit: cover;
   border-bottom: 8px solid #22aee1;
 }
 
-.banner-inner .banner-text{
-  position: absolute !important;
-  left: 2rem !important;
-  bottom: 3rem !important;
+.banner-inner .banner-text {
+  position: absolute;
+  left: clamp(1rem, 3vw, 3rem);
+  bottom: clamp(1rem, 5vw, 3rem);
 
-  max-width: 420px;
-  white-space: normal;
-
-  margin: 0 !important;
-  text-align: left !important;
-
+  max-width: 90%;
   color: #fff;
   font-weight: 600;
-  font-size: clamp(1.4rem, 3.5vw, 3rem);
+
+  font-size: clamp(1.2rem, 3vw, 3rem);
   line-height: 1.1;
+
   text-shadow: 0 4px 14px rgba(0,0,0,0.55);
-  padding: 0.4rem 0.6rem;
   z-index: 10;
 }
-/* Banner section ends */
 
-/* About section */
+/* =========================
+   CAROUSEL / ABOUT
+========================= */
 .carousel-inner {
-  position: relative; 
+  position: relative;
 }
 
 .carousel-indicators {
   position: absolute;
-  bottom: 5%; 
-  left: 35%;
+  bottom: 5%;
+  left: 50%;
   transform: translateX(-50%);
 }
 
@@ -191,48 +212,81 @@ nav .container {
   min-width: 10px;
 }
 
-@media (max-width: 768px) {
-  .carousel-indicators .button {
-    min-width: 5px;
-  }
-}
-
-@media (max-width: 466px) {
-  .carousel-indicators .button {
-    min-width: 2px;
-  }
-}
-
+/* Controls */
 .carousel-control-prev,
 .carousel-control-next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 5%; 
+  width: 8%;
 }
 
 .carousel-control-prev {
-  left: 20%; 
+  left: 5%;
 }
 
 .carousel-control-next {
-  right: 20%; 
+  right: 5%;
 }
-/* About section ends */
 
-/* Newsletter section */
-@media(min-width: 768px) {
+/* Smaller screens */
+@media (max-width: 768px) {
+  .carousel-indicators .button {
+    min-width: 6px;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 12%;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-indicators .button {
+    min-width: 4px;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 15%;
+  }
+}
+
+/* =========================
+   NEWSLETTER
+========================= */
+.news-input {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
   .news-input {
     width: 50%;
   }
 }
-/* Newsletter section ends */
 
-/* Map section */
+@media (min-width: 1200px) {
+  .news-input {
+    width: 40%;
+  }
+}
+
+/* =========================
+   MAP
+========================= */
 #map {
   width: 100%;
-  height: 100%;
+  min-height: clamp(300px, 40vw, 500px);
   border-radius: 10px;
-  min-height: 300px;
 }
-/* Map section ends */  
+
+/* =========================
+   ANIMATIONS
+========================= */
+@keyframes bounce-animation {
+  0% { transform: translateY(0); }
+  25% { transform: translateY(-12px); }
+  50% { transform: translateY(0); }
+  75% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}

@@ -133,23 +133,39 @@ nav .container {
 /* Navbar ends */
 
 /* Banner section */
-/* margin: 0 auto -> centers the image horizontally within its container. 0 sets the top and bottom margins to zero, while auto sets the left and right margins, centering the image if the parent container allows. */
-
-.banner-inner{
+.banner {
+  background: url('../img/Babies cropped1.png') no-repeat center center/cover;
+  height: 80vh; /* controls hero height */
   position: relative;
-  width: 100%;
 }
 
-.banner-inner img{
-  display: block;
+.banner-overlay {
+  height: 100%;
   width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-bottom: 8px solid #22aee1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-text {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    height: 60vh;
+  }
+
+  .banner-text {
+    font-size: 1.8rem;
+  }
 }
 
 /* FORCE bottom-left even if Bootstrap classes exist */
-.banner-inner .banner-text{
+/* .banner-inner .banner-text{
   position: absolute !important;
   left: 1.5rem !important;
   bottom: 1.5rem !important;
@@ -168,7 +184,7 @@ nav .container {
   text-shadow: 0 4px 14px rgba(0,0,0,0.55);
   padding: 0.4rem 0.6rem;
   z-index: 10;
-}
+} */
 /* Banner section ends */
 
 /* About section */

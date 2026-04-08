@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serf;
 }
 
-/* Prevent content from hiding behind fixed navbar */
+/* When you have a fixed header or navbar that covers the top part of the page, you might use this technique to create space so that content doesn’t hide behind the header. This ensures that the content of the page doesn't start at the very top, where the fixed header would cover it. */
 body::before {
   display: block;
   content: '';
@@ -20,8 +20,6 @@ body::before {
 .phone-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap; /* allows wrapping */
   width: 100%;
   padding: .5rem;
   background: #22aee1;
@@ -29,19 +27,16 @@ body::before {
   font-size: 1.15rem;
 }
 
-/* LEFT SIDE (icons) */
-.icons-container {
+.phone-center {
+  margin-left: auto;
+  margin-right: auto;   /* centers between left and right edges */
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.5rem;   /* controls space between text and number */
 }
 
-/* CENTER (contact us) */
-.phone-center {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin: 0 auto; /* keeps centered */
+.right-spacer {
+  width: calc(3 * 2rem); /* roughly match 3 icons width */
 }
 
 .phone-number {
@@ -50,6 +45,12 @@ body::before {
   border-radius: 5px;
   padding: .15rem .5rem;
   text-decoration: none;
+}
+
+.icons-container {
+  display: flex;
+  align-items: center;
+  margin-left: clamp(0.5rem, 3vw, 2rem);
 }
 
 .socicon {
@@ -79,9 +80,9 @@ nav .container {
 .nav-link.stacked {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  line-height: 1.2;
+  align-items: center;     /* horizontal centering */
+  text-align: center;      /* text centering */
+  line-height: 1.2;       /* Adjust line height for better spacing */
 }
 
 .navbar-logo {
@@ -104,43 +105,36 @@ nav .container {
   width: auto;
 }
 
-/* Fix collapse alignment */
 @media (max-width: 991.98px) {
   .navbar-collapse {
     display: flex;
-    justify-content: flex-end;
-    padding-right: 15px;
-  }
-}
-
-/* MOBILE FIX */
-@media (max-width: 576px) {
-  .phone-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 0.5rem;
-  }
-
-  .icons-container {
-    justify-content: center;
-  }
-
-  .phone-center {
-    margin: 0;
+    justify-content: flex-end; /* Aligns the items to the right */
+    padding-right: 15px; /* Adds a small padding on the right side */
   }
 }
 
 @keyframes bounce-animation {
-  0% { transform: translateY(0); }
-  25% { transform: translateY(-20px); }
-  50% { transform: translateY(0); }
-  75% { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 /* Navbar ends */
 
 /* Banner section */
+/* margin: 0 auto -> centers the image horizontally within its container. 0 sets the top and bottom margins to zero, while auto sets the left and right margins, centering the image if the parent container allows. */
+
 .banner-inner{
   position: relative;
   width: 100%;
@@ -154,19 +148,21 @@ nav .container {
   border-bottom: 8px solid #22aee1;
 }
 
+/* FORCE bottom-left even if Bootstrap classes exist */
 .banner-inner .banner-text{
   position: absolute !important;
-  left: 2rem !important;
-  bottom: 3rem !important;
+  left: 1.5rem !important;
+  bottom: 1.5rem !important;
 
-  max-width: 420px;
-  white-space: normal;
+  top: auto !important;
+  right: auto !important;
+  transform: none !important;
 
   margin: 0 !important;
   text-align: left !important;
 
   color: #fff;
-  font-weight: 600;
+  font-weight: 800;
   font-size: clamp(1.4rem, 3.5vw, 3rem);
   line-height: 1.1;
   text-shadow: 0 4px 14px rgba(0,0,0,0.55);
@@ -218,7 +214,7 @@ nav .container {
 .carousel-control-next {
   right: 20%; 
 }
-/* About section ends */
+/* About section ends *?
 
 /* Newsletter section */
 @media(min-width: 768px) {
@@ -235,4 +231,4 @@ nav .container {
   border-radius: 10px;
   min-height: 300px;
 }
-/* Map section ends */  
+/* Map section ends */

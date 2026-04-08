@@ -14,9 +14,37 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg p-0 bg-white fixed-top">
       <div class="phone-container">
-        <div class="phone-center">
-          <span class="call-text">Call us today!</span>
-          <a href="tel:+18329608615" class="phone-number">832-960-8615</a>
+        <div class="icons-container">
+          <a href="https://facebook.com/profile.php?id=61551534043862" target="_blank">
+            <img
+              src="icons/icons8-facebook.gif"
+              alt="Facebook"
+              loading="lazy"
+              class="socicon"
+            />
+          </a>
+          <a href="https://instagram.com/milestonesacademykaty" target="_blank">
+            <img 
+              src="icons/icons8-instagram.gif" 
+              alt="Instagram" 
+              loading="lazy"
+              class="socicon"
+            />
+          </a>
+          <a href="" target="" data-bs-toggle="modal" data-bs-target="#enroll">
+            <img 
+              src="icons/icons8-email.gif" 
+              alt="Email" 
+              loading="lazy"
+              class="socicon"
+            />
+          </a>
+        </div>
+          <div class="phone-center">
+            <span class="call-text">Call us today!</span>
+            <a href="tel:+18329608615" class="phone-number">832-960-8615</a>
+          </div>
+          <div class="right-spacer"></div>
         </div>
       </div>
       <div class="container d-flex align-items-center justify-content-between gap-2">
@@ -68,32 +96,6 @@
               <a href="#contact" class="nav-link">CONTACT US</a>
             </li>
           </ul>
-        </div>
-        <div class="icons-container">
-          <a href="https://facebook.com/profile.php?id=61551534043862" target="_blank">
-            <img
-              src="icons/icons8-facebook.gif"
-              alt="Facebook"
-              loading="lazy"
-              class="socicon"
-            />
-          </a>
-          <a href="https://instagram.com/milestonesacademykaty" target="_blank">
-            <img 
-              src="icons/icons8-instagram.gif" 
-              alt="Instagram" 
-              loading="lazy"
-              class="socicon"
-            />
-          </a>
-          <a href="" target="" data-bs-toggle="modal" data-bs-target="#enroll">
-            <img 
-              src="icons/icons8-email.gif" 
-              alt="Email" 
-              loading="lazy"
-              class="socicon"
-            />
-          </a>
         </div>
       </div>  
     </nav>
@@ -249,19 +251,6 @@
       </div>
     </section>
 
-    <!-- Newsletter -->
-    <!-- <section class="bg-primary text-light p-5">
-      <div class="container">
-        <div class="d-md-flex justify-content-between align-items-center">
-          <h3 class="mb-3 mb-md-0">Sign Up For Our Newsletter</h3>
-          <div class="input-group news-input">
-            <input type="text" class="form-control" placeholder="Enter Email">
-            <button class="btn btn-dark btn-lg" type="button">Button</button>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
     <!-- Programs -->
     <section id="programs" class="p-5">
       <div class="container">
@@ -332,16 +321,70 @@
       <div class="container">
         <div class="row align-item-center justify-content-between">
           <div class="col-md d-flex align-items-center justify-content-center">
-            <img src="img/collage.png" class="img-fluid" alt="Facilities" width="90%">
+            <div id="facilitiesCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#facilitiesCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#facilitiesCarousel" data-bs-slide-to="1" class="button" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#facilitiesCarousel" data-bs-slide-to="2" class="button" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#facilitiesCarousel" data-bs-slide-to="3" class="button" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#facilitiesCarousel" data-bs-slide-to="4" class="button" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#facilitiesCarousel" data-bs-slide-to="5" class="button" aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#facilitiesCarousel" data-bs-slide-to="6" class="button" aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#facilitiesCarousel" data-bs-slide-to="7" class="button" aria-label="Slide 8"></button>
+                <button type="button" data-bs-target="#facilitiesCarousel" data-bs-slide-to="8" class="button" aria-label="Slide 9"></button>
+                <button type="button" data-bs-target="#facilitiesCarousel" data-bs-slide-to="9" class="button" aria-label="Slide 10"></button>
+                <button type="button" data-bs-target="#facilitiesCarousel" data-bs-slide-to="10" class="button" aria-label="Slide 11"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/facility(1).jpg" class="img-fluid w-75 mx-auto d-flex align-items-center justify-content-center" alt="Daycare 0">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/facility(2).jpg" class="img-fluid w-75 mx-auto d-flex align-items-center justify-content-center" alt="Daycare 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/facility(3).jpg" class="img-fluid w-75 mx-auto d-flex align-items-center justify-content-center" alt="Daycare 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/facility(4).jpg" class="img-fluid w-75 mx-auto d-flex align-items-center justify-content-center" alt="Daycare 3">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/facility(5).jpg" class="img-fluid w-75 mx-auto d-flex align-items-center justify-content-center" alt="Daycare 4">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/facility(6).jpg" class="img-fluid w-75 mx-auto d-flex align-items-center justify-content-center" alt="Daycare 5">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/facility(7).jpg" class="img-fluid w-75 mx-auto d-flex align-items-center justify-content-center" alt="Daycare 6">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/facility(8).jpg" class="img-fluid w-75 mx-auto d-flex align-items-center justify-content-center" alt="Daycare 7">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/facility(9).jpg" class="img-fluid w-75 mx-auto d-flex align-items-center justify-content-center" alt="Daycare 8">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/facility(10).jpg" class="img-fluid w-75 mx-auto d-flex align-items-center justify-content-center" alt="Daycare 9">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/facility(11).jpg" class="img-fluid w-75 mx-auto d-flex align-items-center justify-content-center" alt="Daycare 10">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#facilitiesCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#facilitiesCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
           </div>
           <div class="col-md p-5">
             <h2>Our facilities</h2>
             <p>
               At Milestones Academy, we cultivate a warm and welcoming environment where children explore their imagination and creativity, all while feeling the comfort of a loving family home. We have a wide range of educational toys, as well as a variety of craft supplies and learning materials designed to inspire hands-on activities and foster a love for learning. We also have a spacious backyard filled with toys, providing plenty of room for children to play and enjoy the outdoors. 
             </p>
-            <!-- <a href="#" class="btn btn-light mt-3">
-              <i class="bi bi-chevron-right"></i>  Read More
-            </a> -->
           </div>
         </div>
       </div>
@@ -392,7 +435,7 @@
     <section id="questions" class="p-5">
       <div class="container">
         <h2 class="text-center mb-4">Frequently Asked Questions</h2>
-        <div class="accordion accordion-flush" id="questions">
+        <div class="accordion accordion-flush" id="faqAccordion">
           <!-- Item 1 -->
           <div class="accordion-item">
             <h2 class="accordion-header">
@@ -400,7 +443,7 @@
                 Where are you located?
               </button>
             </h2>
-            <div id="question-one" class="accordion-collapse collapse" data-bs-parent="#questions">
+            <div id="question-one" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
               <div class="accordion-body">We are located in Katy, 77493.</div>
             </div>
           </div>
@@ -411,7 +454,7 @@
                 What do I have to bring?
               </button>
             </h2>
-            <div id="question-two" class="accordion-collapse collapse" data-bs-parent="#questions">
+            <div id="question-two" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
               <div class="accordion-body">You only have to bring change of clothes. We provide three meals per day (breakfast, lunch and snack), diapers and wipes. </div>
             </div>
           </div>
@@ -422,7 +465,7 @@
                 What are your opening times?
               </button>
             </h2>
-            <div id="question-three" class="accordion-collapse collapse" data-bs-parent="#questions">
+            <div id="question-three" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
               <div class="accordion-body">We are opened Monday to Friday, from 6:30am to 6:30pm.</div>
             </div>
           </div>
@@ -433,52 +476,13 @@
                 Do you offer part-time too?
               </button>
             </h2>
-            <div id="question-four" class="accordion-collapse collapse" data-bs-parent="#questions">
+            <div id="question-four" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
               <div class="accordion-body">Yes, apart from the full time program, we also offer a part time program.</div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- Team -->
-    <!-- <section id="team" class="p-5 bg-primary">
-      <div class="container">
-        <h2 class="text-center text-white">Our Staff</h2>
-        <p class="lead text-center text-white mb-5">
-          Our staff all have 5+ years working as caregivers in the childcare industry.
-        </p>
-        <div class="row g-4"> -->
-          <!-- col-lg-3 - Grid system has 12 columns, for 4 columns 12/4 = 3, 2 columns 12/2 = 6 <div class="col-md-6 col-lg-3"> -->
-          <!-- <div class="col-md-6">  
-            <div class="card bg-light">
-              <div class="card-body text-center">
-                <img src="https://randomuser.me/api/portraits/women/11.jpg" class="rounded-circle mb-3" alt="">
-                <h3 class="card-title mb-3">Ms Noris</h3>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima vitae accusantium error, sequi sint asperiores.</p>
-                <a href="#" class=""><i class="bi bi-twitter text-dark mx-1"></i></a>
-                <a href="#" class=""><i class="bi bi-facebook text-dark mx-1"></i></a>
-                <a href="#" class=""><i class="bi bi-linkedin text-dark mx-1"></i></a>
-                <a href="#" class=""><i class="bi bi-instagram text-dark mx-1"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="card bg-light">
-              <div class="card-body text-center">
-                <img src="https://randomuser.me/api/portraits/women/10.jpg" class="rounded-circle mb-3" alt="">
-                <h3 class="card-title mb-3">Ms Yolly</h3>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima vitae accusantium error, sequi sint asperiores.</p>
-                <a href="#" class=""><i class="bi bi-twitter text-dark mx-1"></i></a>
-                <a href="#" class=""><i class="bi bi-facebook text-dark mx-1"></i></a>
-                <a href="#" class=""><i class="bi bi-linkedin text-dark mx-1"></i></a>
-                <a href="#" class=""><i class="bi bi-instagram text-dark mx-1"></i></a>
-              </div>
-            </div>
-          </div> 
-        </div>
-      </div>
-    </section> -->
 
     <!-- Contact and Map -->
     <section id="contact" class="p-5">

@@ -4,7 +4,6 @@ body {
   font-family: "Roboto", sans-serf;
 }
 
-/* When you have a fixed header or navbar that covers the top part of the page, you might use this technique to create space so that content doesn’t hide behind the header. This ensures that the content of the page doesn't start at the very top, where the fixed header would cover it. */
 body::before {
   display: block;
   content: '';

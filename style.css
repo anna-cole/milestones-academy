@@ -138,6 +138,7 @@ nav .container {
   height: 80svh;
   position: relative;
   overflow: hidden;
+  background-position: center 35%;
 }
 
 .banner-overlay {
@@ -213,12 +214,28 @@ nav .container {
 
 @media (max-width: 768px) {
   .banner {
-    min-height: 60vh;
-    height: 60svh;
+    min-height: 65vh;
+    height: auto;
+    aspect-ratio: 3 / 4;
+    background-position: center 25%;
   }
 
   .banner-text {
     font-size: 1.8rem;
+    max-width: 92%;
+  }
+
+  .banner-cta {
+    font-size: 1rem;
+    padding: 0.6rem 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner {
+    min-height: 70vh;
+    aspect-ratio: 4 / 5;
+    background-position: 62% 25%;
   }
 }
 /* Banner section ends */

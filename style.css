@@ -139,6 +139,7 @@ nav .container {
   height: 80svh;
   position: relative;
   overflow: hidden;
+  background-position: center 35%;
 }
 
 .banner-overlay {
@@ -150,6 +151,13 @@ nav .container {
   position: relative;
   z-index: 2;
   border-bottom: 8px solid #22aee1;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
 }
 
 .banner::before {
@@ -177,6 +185,17 @@ nav .container {
   animation-delay: 0.3s;
 }
 
+.banner-cta {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1.1s ease forwards, pulseCTA 1.8s ease-in-out 2.2s infinite;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.banner-cta:hover {
+  animation-play-state: paused;
+}
+
 @keyframes fadeInUp {
   to {
     opacity: 1;
@@ -184,14 +203,40 @@ nav .container {
   }
 }
 
+@keyframes pulseCTA {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.07);
+  }
+}
+
 @media (max-width: 768px) {
   .banner {
-    min-height: 60vh;
-    height: 60svh;
+    min-height: 65vh;
+    height: auto;
+    aspect-ratio: 3 / 4;
+    background-position: center 25%;
   }
 
   .banner-text {
     font-size: 1.8rem;
+    max-width: 92%;
+  }
+
+  .banner-cta {
+    font-size: 1rem;
+    padding: 0.6rem 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner {
+    min-height: 70vh;
+    aspect-ratio: 4 / 5;
+    background-position: 62% 25%;
   }
 }
 /* Banner section ends */

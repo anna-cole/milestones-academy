@@ -133,7 +133,7 @@ nav .container {
 
 /* Banner section */
 .banner {
-  background: url('../img/Babies cropped1.png') no-repeat center center/cover;
+  background: url('img/Babies cropped1.png') no-repeat center center/cover;
   min-height: 80vh;
   height: 80svh;
   position: relative;
